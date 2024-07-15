@@ -1,0 +1,60 @@
+.card{
+    max-width: 400px;
+    width: 100%;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px; 
+    row-gap: 15px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carousel-item img {
+    height: 600px; 
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(0, 0, 0);
+    background-size: 100%, 100%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns%3d%22http%3a//www.w3.org/2000/svg%22 fill%3d%22%23fff%22 viewBox%3d%220 0 8 8%22%3e%3cpath d%3d%22M4.5 0L0 4l4.5 4V0zm3 0v8h1V0h-1z%22/%3e%3c/svg%3e');
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns%3d%22http%3a//www.w3.org/2000/svg%22 fill%3d%22%23fff%22 viewBox%3d%220 0 8 8%22%3e%3cpath d%3d%22M3.5 0v8L8 4 3.5 0zM1 0v8h1V0H1z%22/%3e%3c/svg%3e');
+  }
+@media screen and (max-width: 640px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr; 
+        row-gap: 15px;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .carousel-item img {
+        height: 200px; 
+      }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px; 
+        row-gap: 15px;
+    }
+    .carousel-item img {
+        height: 500px; 
+      }
+}
